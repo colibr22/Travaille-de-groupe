@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-void generateStory(char personnage[][20], char lieu[][20], char objets[][20]) {
+void genererHistoire(char personnage[][20], char lieu[][20], char objets[][20]) {
     int alea_perso = rand() % 3;
     int alea_lieu = rand() % 3;
     int alea_objets = rand() % 3;
@@ -43,8 +43,8 @@ int main() {
         scanf("%s", objets[i]);
     }
 
-    / Générer l histoire
-    generateStory(personnage, lieu, objets);
+    // Génére l'histoire
+    genererHistoire(personnage, lieu, objets);
 
     return 0;
 }
